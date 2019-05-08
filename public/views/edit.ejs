@@ -1,0 +1,58 @@
+<% include _header.ejs %>
+<style>
+
+.list-group-item {
+  mix-blend-mode: darken;
+}
+
+</style>
+<div class="container">
+  <br><br>
+  <br>
+  <form action="/update-todo/<%=task%>" method="get" enctype="multipart/form-data">
+    <div class="row">
+      <div class="col-lg-6 offset-md-3">
+        <div class="form-group">
+          <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+          <label for="task" class="bmd-label-floating">Update Task</label>
+          <input type="text" class="form-control" id="task_title" name="task_title" value="<%=todo.task_title%>">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 offset-md-3">
+        <div class="md-form">
+          <input placeholder="Select date" type="text" id="date" name="date" class="form-control datepicker" value="<%=todo.date%>">
+          <label for="date-picker-example">Date</label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 offset-md-3">
+        <div class="md-form">
+          <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+          <input type="text" class="form-control datepicker" id="time" placeholder="Select time" name="time" value="<%=todo.time%>">
+          <label for="task" class="bmd-label-floating">Time</label>
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 offset-md-3 text-right">
+        <button class="btn btn-default">Cancel</button>
+        <button type="submit" class="btn btn-primary btn-raised">Update</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+=======================================
+
+Public Key:
+BIaiiYjqmZKm9kFeZqDZ5cKGr-Y82N9w7g8WE6meC4U5Qz2Z_VmCeYViqurZqXSAbZWIQeTFx-vsbYPfVBKPRY8
+
+Private Key:
+9iV4TeCvTgQXewoZqbkpcOkZZ8X-m2UxwY0oPye_vaU
+
+=======================================
+<% include _footer.ejs %>

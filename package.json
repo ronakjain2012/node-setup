@@ -1,0 +1,29 @@
+{
+  "name": "node-demo",
+  "version": "1.0.0",
+  "description": "Demo node project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "production": "node index.js"
+  },
+  "author": "Ronak Bokaria",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.0.0",
+    "jquery": "^3.3.1",
+    "jsdom": "^13.0.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.3.11",
+    "morgan": "^1.9.0",
+    "mysql": "^2.16.0",
+    "mysql-model": "0.0.3",
+    "node-sass": "^4.10.0",
+    "req-flash": "0.0.3",
+    "web-push": "^3.3.3"
+  }
+}
